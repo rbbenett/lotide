@@ -5,7 +5,7 @@ const tail = function(array) {
       newArray.push(array[i]);
     }
   }
-  console.log(newArray);
+  return newArray;
 };
 
 module.exports = tail
