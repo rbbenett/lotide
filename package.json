@@ -1,6 +1,6 @@
 {
   "name": "@rbbenett/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "rbbenett's Lotide library",
   "main": "assertArraysEqual.js",
   "directories": {
