@@ -1,10 +1,10 @@
-const assertEqual = require('../assertEqual');
-const eqArrays = require('../eqArrays');
+// const assertEqual = require('./assertEqual');
+const eqArrays = require('./eqArrays');
 
 const eqObjects = function(actual, expected) {
   if (Object.keys(actual).length !== Object.keys(expected).length) return false;
 
-  for (let objectIndex in actual) {   
+  for (let objectIndex in actual) {
     if (Array.isArray(actual[objectIndex])) {
       if (!eqArrays(actual[objectIndex], expected[objectIndex])) return false;
     } else if (typeof actual[objectIndex] === 'object') {

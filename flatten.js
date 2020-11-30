@@ -1,5 +1,5 @@
-const assertEqual = require('../assertEqual');
-const eqArrays = require('../eqArrays');
+// const assertEqual = require('./assertEqual');
+// const eqArrays = require('./eqArrays');
 
 const flatten = function(nestedArray) {
   let newArray = [];

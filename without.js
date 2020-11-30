@@ -1,5 +1,5 @@
-const eqArrays = require('../eqArrays');
-const assertArraysEqual = require('../assertArraysEqual');
+// const eqArrays = require('./eqArrays');
+// const assertArraysEqual = require('./assertArraysEqual');
 
 const without = function(source, itemsToRemove) {
   let newArray = [];
