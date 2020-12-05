@@ -1,15 +1,15 @@
 const assertEqual = require('./assertEqual');
 const eqArrays = require('./eqArrays');
 
-const eqObjects = function(actual, expected) {
-  if (Object.keys(actual).length !== Object.keys(expected).length) return false;
+const eqObjects = function(object1, object2) {
+  if (Object.keys(object1).length !== Object.keys(object2).length) return false;
 
-  for (let objectIndex in actual) {
-    if (Array.isArray(actual[objectIndex])) {
-      if (!eqArrays(actual[objectIndex], expected[objectIndex])) return false;
-    } else if (typeof actual[objectIndex] === 'object') {
-      if (!eqArrays(actual[objectIndex], expected[objectIndex])) return false;
-    } else if (actual[objectIndex] !== expected[objectIndex]) return false;
+  for (let objectIndex in object1) {
+    if (Array.isArray(object1[objectIndex])) {
+      if (!eqArrays(object1[objectIndex], object2[objectIndex])) return false;
+    } else if (typeof object1[objectIndex] === 'object') {
+      if (!eqArrays(object1[objectIndex], object2[objectIndex])) return false;
+    } else if (object1[objectIndex] !== object2[objectIndex]) return false;
     
   }
   return true;
